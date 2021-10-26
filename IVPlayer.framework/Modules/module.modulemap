@@ -1,0 +1,6 @@
+framework module IVPlayer {
+  umbrella header "IVPlayer.h"
+
+  export *
+  module * { export * }
+}

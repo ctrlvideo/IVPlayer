@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="26px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>播放控件</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Search" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.1" transform="translate(-358.000000, -1253.000000)">
+            <g id="播放控件" transform="translate(347.000000, 1248.000000)">
+                <polygon id="矩形" opacity="0.499874442" transform="translate(28.000000, 28.000000) rotate(90.000000) translate(-28.000000, -28.000000) " points="-5.32907052e-14 0 56 0 56 56 -5.32907052e-14 56"></polygon>
+                <g id="play" transform="translate(11.960000, 5.800000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <polygon id="路径" points="33.3257143 25.0990597 8.9625974 39.1652883 8.9625974 42.371626 38.88 25.0990597 8.9625974 7.82649351 8.9625974 11.0328312"></polygon>
+                    <polygon id="路径" points="29.9174026 25.7302286 27.2147377 24.1699792 2.90337662 38.2059117 2.90337662 10.1340468 0 8.45766234 0 43.0027948"></polygon>
+                    <polygon id="路径" points="6.56415584 4.92311688 30.9550442 19.0057558 33.9568831 17.2725662 4.03948052 0 4.03948052 34.5451325 6.56415584 33.0883948"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

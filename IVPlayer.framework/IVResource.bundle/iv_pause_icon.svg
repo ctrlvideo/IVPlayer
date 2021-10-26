@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="24px" viewBox="0 0 21 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>播放控件备份</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Search" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="竖屏暂停" transform="translate(-366.000000, -1255.000000)">
+            <g id="播放控件备份" transform="translate(348.000000, 1247.000000)">
+                <polygon id="矩形" opacity="0.499874442" transform="translate(28.000000, 28.000000) rotate(90.000000) translate(-28.000000, -28.000000) " points="-5.32907052e-14 0 56 0 56 56 -5.32907052e-14 56"></polygon>
+                <g id="编组-12" transform="translate(18.000000, 8.000000)" fill="#FFFFFF">
+                    <polygon id="矩形" points="0 3.71924713e-14 4 3.71924713e-14 4 40 0 40"></polygon>
+                    <polygon id="矩形备份-2" points="17 3.71924713e-14 21 3.71924713e-14 21 40 17 40"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
