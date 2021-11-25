@@ -37,7 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 //设置当前时间
 - (void)setTime:(float)time;
 
-//计时器的频率，默认0.1
+//计时器的频率，默认0.1 意思就是1秒执行10次，数值越小触发的频率越高
 @property(nonatomic,assign) float frequency;
 
 //记录当前是否正在运行计时器

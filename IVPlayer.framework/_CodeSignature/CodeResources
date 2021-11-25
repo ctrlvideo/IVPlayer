@@ -10,11 +10,11 @@
 		</data>
 		<key>Headers/IVEventCallModel.h</key>
 		<data>
-		ibyCgAfVCkWrquzPZF5JSUEW5YE=
+		9ZPmfbbcWfNgj/gL71up3FCcciY=
 		</data>
 		<key>Headers/IVPlayer.h</key>
 		<data>
-		h5DsaTYz7EepPhd3QbRrBW5WkD0=
+		EFVIM2ktgF3uHlyweeHB2momCVI=
 		</data>
 		<key>Headers/IVPlayerCardInfoModel.h</key>
 		<data>
@@ -22,23 +22,23 @@
 		</data>
 		<key>Headers/IVPlayerControlView.h</key>
 		<data>
-		36bi3VcHA9A2fpd+ni9GVUqsmBI=
+		nVSoDhGDCODkitQqoX06u4qqwRo=
 		</data>
 		<key>Headers/IVPlayerDefine.h</key>
 		<data>
-		HL3qxkqBYCycN0rilZPMgDSqQYw=
+		bSm4G89rD34xoM6VA8PFlWObv9E=
 		</data>
 		<key>Headers/IVPlayerDelegate.h</key>
 		<data>
-		wlsX6aSazaKVQIE7ukm0NTa+pjA=
+		7JDqKfy5OLbIpfb6twsX59AvJNI=
 		</data>
 		<key>Headers/IVPlayerLoadingView.h</key>
 		<data>
-		to21wB/pe9OfgdsSAmV+ebmQ/r8=
+		SkPjJcgwyL2xv8fzmj0fOGGe3DQ=
 		</data>
 		<key>Headers/IVPlayerManager.h</key>
 		<data>
-		XW3pcqIn/wvA0hKWJvk1KboDa5k=
+		JGQkCLBCGucOqfU2TZfVDLUo1YI=
 		</data>
 		<key>Headers/IVPlayerNodeModel.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Headers/IVTimer.h</key>
 		<data>
-		Enjbvu3td+d/0Bo3SQXmRGGwDRk=
+		SBm1+2x5kBQMaVW3IILxFpy/7y0=
 		</data>
 		<key>IVResource.bundle/iv_centerPlay_icon.svg</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0KCfENKLBYd6KFTB0jx3rKuqS2U=
+		+MSIoqP1/YW7bn7+HmdH20QoDbo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,22 +98,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ibyCgAfVCkWrquzPZF5JSUEW5YE=
+			9ZPmfbbcWfNgj/gL71up3FCcciY=
 			</data>
 			<key>hash2</key>
 			<data>
-			4gtPMcsYCcJM3Al/DnijRFfjreMJwPXvoeYbBvWGw1I=
+			FmXbaUNJBH+Sq3/Ud3AzuZUvw9LsRdY09srVKz0hoY8=
 			</data>
 		</dict>
 		<key>Headers/IVPlayer.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			h5DsaTYz7EepPhd3QbRrBW5WkD0=
+			EFVIM2ktgF3uHlyweeHB2momCVI=
 			</data>
 			<key>hash2</key>
 			<data>
-			TgZ7cXp8yThDJ00K23JUxFOwFKnMCVq/HNS7ch9yqCA=
+			4wDEsu6jWzrIzGapmkvSUcGV7C+CldRmnl2OPCCpzKE=
 			</data>
 		</dict>
 		<key>Headers/IVPlayerCardInfoModel.h</key>
@@ -131,55 +131,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			36bi3VcHA9A2fpd+ni9GVUqsmBI=
+			nVSoDhGDCODkitQqoX06u4qqwRo=
 			</data>
 			<key>hash2</key>
 			<data>
-			p8FLgf2YDoq4rQ/GfQaTPKlh5StlNmlZz5+zFvurWi4=
+			4blGqnMlIBw8pjYGRajcMJLB0QyWnvFq85SWtWFBGAQ=
 			</data>
 		</dict>
 		<key>Headers/IVPlayerDefine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HL3qxkqBYCycN0rilZPMgDSqQYw=
+			bSm4G89rD34xoM6VA8PFlWObv9E=
 			</data>
 			<key>hash2</key>
 			<data>
-			eMbQc7C3pKtlu4kta9piwc7LpA4KdTYzm0rfhRtzW6U=
+			neP9J6hOUofASUMbFErTOA3UpHpBWPYWwi/+8qHM0BY=
 			</data>
 		</dict>
 		<key>Headers/IVPlayerDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wlsX6aSazaKVQIE7ukm0NTa+pjA=
+			7JDqKfy5OLbIpfb6twsX59AvJNI=
 			</data>
 			<key>hash2</key>
 			<data>
-			lKwC/oraGhdliRiv36lYvMh7LwNcdOWfgbhrDKBqqKc=
+			itJ99eISBeb7bb/hFIIH2GCOul8x+nmtSXnVwS0Xmi8=
 			</data>
 		</dict>
 		<key>Headers/IVPlayerLoadingView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			to21wB/pe9OfgdsSAmV+ebmQ/r8=
+			SkPjJcgwyL2xv8fzmj0fOGGe3DQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			BJJcodmM9L+h6CtMQ63wYlN/KBTRnwSMpu5qEC+QvYo=
+			iipgghU06RpV9QdCM0L4e64F9ES+BCCl+KZlXnGFdvQ=
 			</data>
 		</dict>
 		<key>Headers/IVPlayerManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XW3pcqIn/wvA0hKWJvk1KboDa5k=
+			JGQkCLBCGucOqfU2TZfVDLUo1YI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Bh3xyfJOvgtmhWWqkFSBxv8GSK+Nig1a/8cpMRw1ycg=
+			15lr6jIU8o2cAkLcIJkQURsvlW9sewDPd00ihmP6MRg=
 			</data>
 		</dict>
 		<key>Headers/IVPlayerNodeModel.h</key>
@@ -230,11 +230,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Enjbvu3td+d/0Bo3SQXmRGGwDRk=
+			SBm1+2x5kBQMaVW3IILxFpy/7y0=
 			</data>
 			<key>hash2</key>
 			<data>
-			dfPZEyk1gl8+c+vsvrnPwubJuOp5MH+oltSxb8eRp/c=
+			E/hnkCcQyaJ1AuALVlaUIaPn/I/KEOprfMV1ADYih7o=
 			</data>
 		</dict>
 		<key>IVResource.bundle/iv_centerPlay_icon.svg</key>

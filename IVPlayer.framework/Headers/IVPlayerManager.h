@@ -31,6 +31,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 是否打印调试log， 默认：NO不打印
 @property(nonatomic,assign) BOOL isDebugLog;
 
+/// 是否开启数据上报功能，默认：YES 统计操作数据
+@property(nonatomic,assign) BOOL dataStatistics;
 
 
 /// 单例管理类

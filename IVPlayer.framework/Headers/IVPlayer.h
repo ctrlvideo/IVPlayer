@@ -7,8 +7,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <IVPlayer/IVPlayerDelegate.h>
-#import <IVPlayer/IVPlayerControlView.h>
+#import "IVPlayerDelegate.h"
+#import "IVPlayerControlView.h"
 
 
 NS_ASSUME_NONNULL_BEGIN
@@ -57,6 +57,17 @@ NS_ASSUME_NONNULL_BEGIN
 /// 设置配置URL开始加载
 /// @param config_url  配置url
 - (void)setStartLoadWithConfig_url:(NSString*)config_url;
+
+
+/// 设置协议资源ZIP开始加载
+/// @param resourcePath 智令协议资源zip本地路径，必须是ZIP后缀的完整路径
+/// @param fileName  文件名称
+- (void)setStartLoadWithResourcePath:(NSString*)resourcePath fileName:(NSString*)fileName;
+
+
+/// 设置访问用户ID
+/// @param userId 数据上报统计的用户ID
+- (void)setCommitUserId:(NSString*)userId;
 
 
 /// 获取当前播放的片段数据

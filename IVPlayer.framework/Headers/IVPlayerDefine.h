@@ -5,7 +5,7 @@
 //  Created by Di Guo on 2020/12/24.
 //
 
-#import <IVPlayer/IVPlayerManager.h>
+#import "IVPlayerManager.h"
 
 #ifndef IVPlayerDefine_h
 #define IVPlayerDefine_h
@@ -24,10 +24,12 @@ typedef enum : NSUInteger {
 //服务器主机地址
 //#define KServer @"https://apiivetest.ctrlvideo.com"
 #define KServer @"https://apiive.ctrlvideo.com"
-//视频协议地址
+//视频协议URL
 #define KGetVideoProtocolInfoUrl [NSString stringWithFormat:@"%@/player/ajax/get_ivideo_info/?project_id=",KServer]
-//定义项目配置地址URL,pverVersion需要请求版本的协议，version当前SDK的版本
+//协议配置URL,pverVersion：当前协议的版本号，version：当前SDK的版本号
 #define KVideoProtocolUrl(projectId,pverVersion,version) [NSString stringWithFormat:@"%@%@&pver=%@&version=%@",KGetVideoProtocolInfoUrl,projectId,pverVersion,version]
+//数据上报URL
+#define KPushVideoPlayInfoUrl [NSString stringWithFormat:@"%@/player/ajax/post_ivideo_action/",KServer]
 
 //弱引用self
 #define weakSelf(type)  __weak typeof(type) weak##type = type;
@@ -41,8 +43,10 @@ typedef enum : NSUInteger {
 
 
 //日志输出
+#ifndef DEBUG
 #define IVLog(...) if([IVPlayerManager playerManager].isDebugLog) NSLog(@"IVLog-%s第%d行:%@",__FILE_NAME__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
-
-
+#else
+#define IVLog(...)
+#endif
 
 #endif /* IVPlayerDefine_h */

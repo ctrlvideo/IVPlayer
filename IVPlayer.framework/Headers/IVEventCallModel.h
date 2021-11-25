@@ -98,7 +98,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong) NSString *type;
 //用户行为还是被动触发 YES:用户行为 NO:被动触发
 @property(nonatomic,assign) bool factitious;
-//成功失败类事件操作结果
+//成功失败类事件操作结果 -1选择 0失败 1成功
 @property(nonatomic,assign) int branch;
 //控件操作的ID
 @property(nonatomic,strong) NSString *option_id;

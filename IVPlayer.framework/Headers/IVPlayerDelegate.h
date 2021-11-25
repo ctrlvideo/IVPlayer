@@ -6,12 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <IVPlayer/IVPlayerDefine.h>
-#import <IVPlayer/IVPlayerNodeModel.h>
-#import <IVPlayer/IVReleaseInfoModel.h>
-#import <IVPlayer/IVPlayerCardInfoModel.h>
-#import <IVPlayer/IVError.h>
-#import <IVPlayer/IVEventCallModel.h>
+#import "IVPlayerDefine.h"
+#import "IVPlayerNodeModel.h"
+#import "IVReleaseInfoModel.h"
+#import "IVPlayerCardInfoModel.h"
+#import "IVError.h"
+#import "IVEventCallModel.h"
 
 @class IVPlayer;
 
@@ -71,7 +71,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)player:(IVPlayer*)player onEventEndWithNodeModel:(IVPlayerNodeModel*)nodeModel;
 
 
-/// 加载失败
+/// 互动加载失败
 /// @param player 当前player
 /// @param error   IVError 类型
 - (void)player:(IVPlayer*)player failureWithError:(IVError*)error;
@@ -115,30 +115,30 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 
 
-/// 播控协议数据开始加载
+/// 互动协议数据开始加载
 /// @param player  当前player
 - (void)playerWillStartLoadRequestInPlayer:(IVPlayer*)player;
 
 
-/// 播控协议数据加载完毕，互动数据准备就绪
+/// 互动协议初始化完毕，互动数据准备就绪
 /// @param player  当前player
 /// @param infoModel 视频信息
 - (void)player:(IVPlayer*)player didFinishBeReadyPlayWithInfoModel:(IVReleaseInfoModel*)infoModel;
 
 
-/// 播控加载错误，互动视频加载错误时回调
+/// 互动加载错误，互动视频加载错误时回调
 /// @param player  当前player
 /// @param error   对应IVError枚举类型
 - (void)player:(IVPlayer*)player requestLoadFailWithError:(IVError*)error;
 
 
-/// 播控加载状态改变
+/// 互动加载状态改变
 /// @param player 当前player
 /// @param loading  YES:加载中  NO:加载结束
 - (void)player:(IVPlayer*)player didChangeLoading:(BOOL)loading;
 
 
-/// 播放状态改变
+/// 互动播放状态改变
 /// @param player 当前player
 /// @param status 对应IVPlayerStatus枚举类型
 - (void)player:(IVPlayer*)player didChangeStatus:(IVPlayerStatus)status;
@@ -202,7 +202,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)player:(IVPlayer*)player didTouchTapGestureWithPoint:(CGPoint)point;
 
 
-/// 播控调整速率
+/// 互动调整视频速率
 /// @param player 当前player
 /// @param rate  视频速率
 - (void)player:(IVPlayer*)player setVideoRate:(CGFloat)rate;
