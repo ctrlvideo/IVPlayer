@@ -22,7 +22,6 @@ typedef enum : NSUInteger {
 
 
 //服务器主机地址
-//#define KServer @"https://apiivetest.ctrlvideo.com"
 #define KServer @"https://apiive.ctrlvideo.com"
 //视频协议URL
 #define KGetVideoProtocolInfoUrl [NSString stringWithFormat:@"%@/player/ajax/get_ivideo_info/?project_id=",KServer]
@@ -33,14 +32,6 @@ typedef enum : NSUInteger {
 
 //弱引用self
 #define weakSelf(type)  __weak typeof(type) weak##type = type;
-
-//屏幕尺寸
-#define kScreenWidth [UIScreen mainScreen].bounds.size.width
-#define kScreenHeight [UIScreen mainScreen].bounds.size.height
-//导航栏+状态高度
-#define KStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
-#define KNaviStatusBarHeight (KStatusBarHeight + 44)
-
 
 //日志输出
 #ifndef DEBUG

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IVPlayer'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'Interactive video playback control terminal'
 
 # This description is used to generate tags and improve search results.

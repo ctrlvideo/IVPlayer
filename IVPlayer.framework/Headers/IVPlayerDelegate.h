@@ -23,6 +23,11 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol IVPlayerControlDelegate <NSObject>
 
 
+/// 播控即将执行初始化
+/// @param player  当前player
+- (void)playerControlWillInitFromPlayer:(IVPlayer*)player;
+
+
 /// 播放状态改变通知
 /// @param player  当前player
 - (void)player:(IVPlayer*)player playerControlDidChangeStatus:(IVPlayerStatus)status;
@@ -47,11 +52,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param player 当前player
 /// @param loading  YES:加载中  NO:加载结束
 - (void)player:(IVPlayer*)player didChangeLoading:(BOOL)loading;
-
-
-/// 播控即将执行初始化
-/// @param player  当前player
-- (void)playerControlWillInitFromPlayer:(IVPlayer*)player;
 
 
 /// 播控即将销毁释放

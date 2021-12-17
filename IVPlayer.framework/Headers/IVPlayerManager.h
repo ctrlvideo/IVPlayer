@@ -22,13 +22,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// 图片资源未加载完成前的占位代替图
 @property(nonatomic,strong) UIImage *placeholderImage;
 
-/// 设置资源未加载完毕是否进入loading状态直到加载完成才继续播放，默认：NO忽略资源加载情况  YES将会等待资源再次加载，如果再次加载失败将会通过IVPlayer代理通知videoResumeWhenResourceType: downloadFailInPlayer: media_id: withError:
+/// 设置资源未加载完毕是否进入loading状态直到加载完成才继续播放，默认：NO忽略资源加载情况  YES将会等待资源再次加载结果
+/// 如果再次加载失败将会触发IVPlayerDelegate代理通知videoResumeWhenResourceType: downloadFailInPlayer: media_id: withError:
 @property(nonatomic,assign) BOOL openLoading;
 
 /// 设置资源加载超时的时间/s （loading）默认8秒
 @property(nonatomic,assign) NSTimeInterval timeoutInterval;
 
-/// 是否打印调试log， 默认：NO不打印
+/// 是否输出调试日志， 默认：NO不打印
 @property(nonatomic,assign) BOOL isDebugLog;
 
 /// 是否开启数据上报功能，默认：YES 统计操作数据

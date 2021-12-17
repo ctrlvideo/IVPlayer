@@ -9,6 +9,7 @@
 #import "IVReleaseInfoModel.h"
 #import "IVPlayerLoadingView.h"
 #import "IVPlayerRateView.h"
+#import "IVPlayerEventBarView.h"
 #import "IVEventCallModel.h"
 #import "IVError.h"
 #import "IVPlayerDefine.h"
@@ -31,6 +32,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)playerControlViewDidClickNextNode:(IVPlayerNodeModel*)nodeModel;
 //设置seek时间
 - (void)playerControlViewWillSetVideoSeekTime:(CGFloat)time;
+//播控滑动进度条，type: 0 began, 1 move, 2 ended
+- (void)playerControlViewMoveProgressWithTime:(CGFloat)time type:(int)type;
 
 @end
 
@@ -42,6 +45,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong) IVPlayerLoadingView *loadingView;
 //速率选项view
 @property(nonatomic,strong) IVPlayerRateView *rateView;
+//事件bar
+@property(nonatomic,strong) IVPlayerEventBarView *eventBar;
 //视频标题
 @property(nonatomic,strong) UILabel *titleLabel;
 //显示播控计时器
@@ -50,10 +55,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,assign) BOOL onLoading;
 //显示播控的持续时间 - 默认8秒
 @property(nonatomic,assign) CGFloat duration;
-
-
-@property(nonatomic,weak) id <IVPlayerControlViewDelegate> delegate;
-
 //记录视频信息模型
 @property(nonatomic,strong) IVReleaseInfoModel *infoModel;
 //是否禁止显示播放按钮(被动暂停时，禁止显示播放暂停按钮)
@@ -62,6 +63,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,assign) BOOL showProgressViewEnabled;
 //播放状态
 @property(nonatomic,assign) IVPlayerStatus status;
+//事件代理
+@property(nonatomic,weak) id <IVPlayerControlViewDelegate> delegate;
 
 //是否加载中
 - (void)loadingChangeWithStatus:(BOOL)loading;
@@ -73,7 +76,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)showOrHidenAllControlSubview;
 
 //显示或隐藏播控栏 YES显示 NO隐藏
-- (void)showOrHidenAllControlSubview:(BOOL)show;
+- (void)showOrHidenAllControlSubview:(BOOL)show animation:(BOOL)animation;
 
 //设置当前播放器的时间
 - (void)setPlayerInCurrentTime:(CGFloat)time;
