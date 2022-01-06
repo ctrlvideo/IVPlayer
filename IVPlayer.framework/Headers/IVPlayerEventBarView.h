@@ -41,10 +41,19 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,assign) BOOL showPlay;
 //是否显示进度条
 @property(nonatomic,assign) BOOL showProgress;
-//是否显示速率
+//是否显示倍速
 @property(nonatomic,assign) BOOL showRate;
 //是否显示节点
 @property(nonatomic,assign) BOOL showNode;
+
+//是否可用播放按钮
+@property(nonatomic,assign) BOOL play_enabled;
+//是否可用节点
+@property(nonatomic,assign) BOOL node_enabled;
+//是否可用进度条
+@property(nonatomic,assign) BOOL progre_enabled;
+//是否可用倍速
+@property(nonatomic,assign) BOOL rate_enabled;
 
 
 //准备、重置
