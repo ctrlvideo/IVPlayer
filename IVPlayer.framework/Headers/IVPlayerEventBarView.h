@@ -65,9 +65,6 @@ NS_ASSUME_NONNULL_BEGIN
 //设置当前速率按钮的标题
 - (void)setRateButtonTitle:(NSString*)title;
 
-//获取bundle资源图片
-- (UIImage*)getBundleImageWithName:(NSString*)name;
-
 
 @end
 

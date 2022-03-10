@@ -22,19 +22,19 @@
 		</data>
 		<key>Headers/IVPlayerControlView.h</key>
 		<data>
-		yV66s45NZQtq7rZSs2KoBLEqxtU=
+		3+wuZY8L7BKPtHuDZVN2b4EXqCs=
 		</data>
 		<key>Headers/IVPlayerDefine.h</key>
 		<data>
-		9tkO5CysJsD8soA87xqh27Me/r8=
+		Dqs3x0Ph09yTqinDkHSF4xKBjWw=
 		</data>
 		<key>Headers/IVPlayerDelegate.h</key>
 		<data>
-		1wIz544F8JM4iuNr3l6lV95mlX0=
+		0Jr4DMulmqWOjfrry1nZm8UvDdM=
 		</data>
 		<key>Headers/IVPlayerEventBarView.h</key>
 		<data>
-		Mywc6q2XqsKNKyIvpem1gmumqCE=
+		6HZC0auSoMBzi9e6oH45kOrSvsw=
 		</data>
 		<key>Headers/IVPlayerLoadingView.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/IVPlayerManager.h</key>
 		<data>
-		Vbf0mIPzCPeyTKl0UrNUZjLdyns=
+		wMLnR72gc5n+fOiYil7XpQU4bkA=
 		</data>
 		<key>Headers/IVPlayerNodeModel.h</key>
 		<data>
@@ -64,21 +64,9 @@
 		<data>
 		SBm1+2x5kBQMaVW3IILxFpy/7y0=
 		</data>
-		<key>IVResource.bundle/iv_centerPlay_icon.svg</key>
-		<data>
-		dIrOv2oerBZGJj9YqVCzxz4Iiww=
-		</data>
-		<key>IVResource.bundle/iv_pause_icon.svg</key>
-		<data>
-		d0JlBr8tvdt8nVfs8F122E4D0xY=
-		</data>
-		<key>IVResource.bundle/iv_play_icon.svg</key>
-		<data>
-		Blrk3KXihQcmCZBgMviLWCfJ/Og=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		+kBbD9BjqCTv4Wbnfl7vdQOBhA0=
+		X6f96lW91WUkfeX8TuQNFsLSGkY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -135,44 +123,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yV66s45NZQtq7rZSs2KoBLEqxtU=
+			3+wuZY8L7BKPtHuDZVN2b4EXqCs=
 			</data>
 			<key>hash2</key>
 			<data>
-			oX82sdZXZzd5Q/f2wPmy5DPdv7pRyRNPRBQdBcwQ9/Y=
+			1ttyqsNXdLl9gn9Ye2SmF/v12+3NgujesW/DmnBMcX0=
 			</data>
 		</dict>
 		<key>Headers/IVPlayerDefine.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9tkO5CysJsD8soA87xqh27Me/r8=
+			Dqs3x0Ph09yTqinDkHSF4xKBjWw=
 			</data>
 			<key>hash2</key>
 			<data>
-			+2GgVTlyqlUvNXhih8aA6TBwk3mfGrMQmqCLx10P8CI=
+			IdLB0EDy2VAP5nTjQoVsN9njCWroKFp1j4cyAMoHTd0=
 			</data>
 		</dict>
 		<key>Headers/IVPlayerDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1wIz544F8JM4iuNr3l6lV95mlX0=
+			0Jr4DMulmqWOjfrry1nZm8UvDdM=
 			</data>
 			<key>hash2</key>
 			<data>
-			1u3V9l2NhTEnCpLwJqu8d5C5qD1WOadVK5iMqDT7REc=
+			dyWr83kZFcdtrY+dx0KQjuEKS2xKEYyjHeAb7+wlV5k=
 			</data>
 		</dict>
 		<key>Headers/IVPlayerEventBarView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Mywc6q2XqsKNKyIvpem1gmumqCE=
+			6HZC0auSoMBzi9e6oH45kOrSvsw=
 			</data>
 			<key>hash2</key>
 			<data>
-			3P9AxTdNYHzAWPCXgghivG3C4LQPsWGDZScqYJrqjt8=
+			YzGHjjCqI5ioMaihDB7/6MuhlNewJq3nrY8QqHviUf4=
 			</data>
 		</dict>
 		<key>Headers/IVPlayerLoadingView.h</key>
@@ -190,11 +178,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Vbf0mIPzCPeyTKl0UrNUZjLdyns=
+			wMLnR72gc5n+fOiYil7XpQU4bkA=
 			</data>
 			<key>hash2</key>
 			<data>
-			gCt68hn/Q09QKIPOe3bJm0jwldz3Wx6S2rR40TF9wMM=
+			G24/ItJu+DBMIhOWx1HZMyVgIQaog6BSuu83vWTuuek=
 			</data>
 		</dict>
 		<key>Headers/IVPlayerNodeModel.h</key>
@@ -250,39 +238,6 @@
 			<key>hash2</key>
 			<data>
 			E/hnkCcQyaJ1AuALVlaUIaPn/I/KEOprfMV1ADYih7o=
-			</data>
-		</dict>
-		<key>IVResource.bundle/iv_centerPlay_icon.svg</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			dIrOv2oerBZGJj9YqVCzxz4Iiww=
-			</data>
-			<key>hash2</key>
-			<data>
-			I/OeN8haOz+aZ13uCy9eKenkWUpt93t1Um7xP0qcdWQ=
-			</data>
-		</dict>
-		<key>IVResource.bundle/iv_pause_icon.svg</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			d0JlBr8tvdt8nVfs8F122E4D0xY=
-			</data>
-			<key>hash2</key>
-			<data>
-			XV4ekEDMADE9FI3lwenmIMApjO4uYD2JrTFiwZPcFpk=
-			</data>
-		</dict>
-		<key>IVResource.bundle/iv_play_icon.svg</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Blrk3KXihQcmCZBgMviLWCfJ/Og=
-			</data>
-			<key>hash2</key>
-			<data>
-			OUv3c2LlO6C77m+4tCM2zNCsVPGbygaSuHhuRfu62yU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

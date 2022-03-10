@@ -34,10 +34,6 @@ typedef enum : NSUInteger {
 #define weakSelf(type)  __weak typeof(type) weak##type = type;
 
 //日志输出
-#ifndef DEBUG
-#define IVLog(...) if([IVPlayerManager playerManager].isDebugLog) NSLog(@"IVLog-%s第%d行:%@",__FILE_NAME__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
-#else
-#define IVLog(...)
-#endif
+#define IVLog(type,...) if (!([IVPlayerManager playerManager].logTypes & IVPlayerLogTypeNormal)) if ([IVPlayerManager playerManager].logTypes & IVPlayerLogTypeAll || [IVPlayerManager playerManager].logTypes & type) NSLog(@"IVLog-%s第%d行:%@",__FILE_NAME__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
 
 #endif /* IVPlayerDefine_h */

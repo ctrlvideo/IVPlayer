@@ -91,7 +91,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol IVPlayerDelegate <NSObject>
 
 
-/// 获取当前播放器时间 - 注意float至少精确到小数点后三位
+/// 获取当前播放器时间 - 注意float至少精确到小数点后两位
 /// @param player  当前player
 - (CGFloat)timeInCurrentVideoFromPlayer:(IVPlayer*)player;
 

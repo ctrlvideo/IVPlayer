@@ -20,8 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @protocol IVPlayerControlViewDelegate <NSObject>
-//点击播放按钮
-- (void)playerControlViewDidClickPlayButton;
+//点击播放按钮 是否中间的按钮
+- (void)playerControlViewDidClickPlayButton:(BOOL)center;
 //点击暂停按钮
 - (void)playerControlViewDidClickPauseButton;
 //设置播放速率

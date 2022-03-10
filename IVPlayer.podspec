@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IVPlayer'
-  s.version          = '1.0.4'
+  s.version          = '1.0.5'
   s.summary          = 'Interactive video playback control terminal'
 
 # This description is used to generate tags and improve search results.
@@ -27,7 +27,6 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/ctrlvideo/IVPlayer.git', :tag => s.version }
 
   s.ios.deployment_target = '9.0'
-  s.resources = 'IVPlayer.framework/IVResource.bundle'
   s.vendored_frameworks = 'IVPlayer.framework'
   
   s.frameworks = 'AVFoundation','WebKit','Foundation','CoreGraphics','CoreImage','UIKit'
