@@ -34,7 +34,7 @@ typedef NS_OPTIONS(NSUInteger, IVPlayerLogTypes){
 @property(nonatomic,strong) UIImage *placeholderImage;
 
 /// 设置资源未加载完毕是否进入loading状态直到加载完成才继续播放，默认：NO忽略资源加载情况  YES将会等待资源再次加载结果
-/// 如果再次加载失败将会触发IVPlayerDelegate代理通知videoResumeWhenResourceType: downloadFailInPlayer: media_id: withError:
+/// 如果再次加载失败将会触发IVPlayerDelegate代理通知回调videoResumeWhenResourceType: downloadFailInPlayer: media_id: withError:
 @property(nonatomic,assign) BOOL openLoading;
 
 /// 设置资源加载超时的时间/s （loading）默认8秒
@@ -61,11 +61,11 @@ typedef NS_OPTIONS(NSUInteger, IVPlayerLogTypes){
 + (void)requestResourceFromIvSources:(NSMutableArray<NSString*>*)sources;
 
 
-/// SDK版本号, 双端统一
+/// SDK版本号（主流版本一般有重大更新才会变跟）
 + (NSString*)version;
 
 
-/// build版本
+/// build版本号 （bug修复或功能迭代版本号，值对应每个version版本从低到高依次递增）
 + (NSString*)build;
 
 

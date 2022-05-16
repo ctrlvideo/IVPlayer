@@ -22,7 +22,7 @@ typedef enum : NSUInteger {
 
 
 //服务器主机地址
-#define KServer @"https://apiive.ctrlvideo.com"
+#define KServer @"https://apiive-v3.ctrlvideo.com"
 //视频协议URL
 #define KGetVideoProtocolInfoUrl [NSString stringWithFormat:@"%@/player/ajax/get_ivideo_info/?project_id=",KServer]
 //协议配置URL,pverVersion：当前协议的版本号，version：当前SDK的版本号

@@ -21,9 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
  2互动操作信息   IVEventCallOperateModel
  
  信息内容说明：根据callType对本类做实例类型转换
- callType == 0 当前类实例类型为IVEventCallSpotModel 且只在项目初始化完成时调用一次
- callType == 1 当前类实例类型为IVEventCallExposureModel 每当视频时间播放到互动事件时间点时触发
- callType == 2 当前类实例类型为IVEventCallOperateModel  每当用户操作互动事件按钮时或被动事件触发时通知
+ callType == 0 实例类型:IVEventCallSpotModel 且只在项目初始化完成时通知一次
+ callType == 1 实例类型:IVEventCallExposureModel 进入事件互动开始时间点时通知
+ callType == 2 实例类型:IVEventCallOperateModel  用户操作互动事件按钮或被动事件触发时通知
  */
 @property(nonatomic,assign) NSInteger callType;
 
@@ -73,6 +73,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
+
 //互动点曝光-简洁模型
 @interface IVEventCallExposureModel : IVEventCallModel
 //事件ID
@@ -83,7 +84,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong) NSString *type;
 
 @end
-
 
 
 

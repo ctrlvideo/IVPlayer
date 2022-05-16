@@ -23,11 +23,6 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol IVPlayerControlDelegate <NSObject>
 
 
-/// 播控即将执行初始化
-/// @param player  当前player
-- (void)playerControlWillInitFromPlayer:(IVPlayer*)player;
-
-
 /// 播放状态改变通知
 /// @param player  当前player
 - (void)player:(IVPlayer*)player playerControlDidChangeStatus:(IVPlayerStatus)status;
@@ -52,6 +47,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param player 当前player
 /// @param loading  YES:加载中  NO:加载结束
 - (void)player:(IVPlayer*)player didChangeLoading:(BOOL)loading;
+
+
+/// 播控即将开始初始化
+/// @param player  当前player
+- (void)playerControlWillInitFromPlayer:(IVPlayer*)player;
 
 
 /// 播控即将销毁释放
@@ -96,7 +96,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (CGFloat)timeInCurrentVideoFromPlayer:(IVPlayer*)player;
 
 
-/// 设置播放器seek到某一个时间点
+/// 设置播放器seek到指定的时间点
 /// @param player  当前player
 /// @param time  播放器seek的时间点 （时间CGFloat类型转换CMTime参考Demo）
 - (void)player:(IVPlayer*)player playSetCurrentVideoSeekToTime:(CGFloat)time;
@@ -110,6 +110,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// 视频暂停播放通知
 /// @param player  当前player
 - (void)videoDidPauseInPlayer:(IVPlayer*)player;
+
+
+/// 设置视频速率（通过播控层操作或调用IVPlayer的setRate接口触发）
+/// @param player 当前player
+/// @param rate  视频速率
+- (void)player:(IVPlayer*)player setVideoRate:(CGFloat)rate;
 
 
 @optional
@@ -144,7 +150,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)player:(IVPlayer*)player didChangeStatus:(IVPlayerStatus)status;
 
 
-/// 资源下载失败：return 是否继续播放，如果NO 播控将处于停止状态
+/// 点击非互动区域的背景view时通知
+/// @param player 当前player
+/// @param point   触摸在view上的坐标点
+- (void)player:(IVPlayer*)player didTouchTapGestureWithPoint:(CGPoint)point;
+
+
+/// 资源下载失败：return YES继续播放，NO将处于停止错误状态，注意：此接口触发的条件必须设置IVPlayerManager的openLoading为YES
 /// @param player 当前player
 /// @param type 资源类型 0图片 1音频 (目前只处理了图片，音频暂不会通知)
 /// @param media_id 素材ID
@@ -152,22 +164,22 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)player:(IVPlayer*)player resumeWhenResourceDownloadFailOnType:(NSInteger)type media_id:(NSString*)media_id withError:(IVError*)error;
 
 
-/// 获取互动信息
+/// 事件互动信息
 /// @param player  当前player
 /// @param resultModel  互动信息模型
 - (void)player:(IVPlayer*)player onEventCallback:(IVEventCallModel*)resultModel;
 
 
-/// 显示结局卡信息
+/// 显示结局卡信息（功能定制接口）
 /// @param player  当前player
 /// @param infoModel 结局卡事件信息
 - (IVPlayerCardInfoModel*)cardInfoModelOnPlayer:(IVPlayer *)player eventInfoModel:(IVEventCallExposureModel*)infoModel;
 
 
-/// 分享通知
+/// 结局卡分享通知（功能定制接口）
 /// @param player 当前player
 /// @param infoModel 视频信息模型
-- (void)player:(IVPlayer *)player shareWithVideoInfoModel:(IVReleaseInfoModel*)infoModel;
+- (void)player:(IVPlayer *)player cardShareWithVideoInfoModel:(IVReleaseInfoModel*)infoModel;
 
 
 /// 按钮触发拨打电话  -（实现此代理即可自定义拨打UI样式，否则使用默认系统拨打电话）
@@ -194,18 +206,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param miniprogramId 小程序ID
 /// @param path 小程序路径
 - (void)player:(IVPlayer*)player openMiniprogramId:(NSString*)miniprogramId path:(NSString*)path;
-
-
-/// 点击屏幕时触发，如果点击的对象为播控按钮则不会触发此通知
-/// @param player 当前player
-/// @param point   触摸在view上的坐标点
-- (void)player:(IVPlayer*)player didTouchTapGestureWithPoint:(CGPoint)point;
-
-
-/// 互动调整视频速率
-/// @param player 当前player
-/// @param rate  视频速率
-- (void)player:(IVPlayer*)player setVideoRate:(CGFloat)rate;
 
 
 @end

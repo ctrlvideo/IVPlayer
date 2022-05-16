@@ -66,8 +66,8 @@ NS_ASSUME_NONNULL_BEGIN
 //事件代理
 @property(nonatomic,weak) id <IVPlayerControlViewDelegate> delegate;
 
-//是否加载中
-- (void)loadingChangeWithStatus:(BOOL)loading;
+//设置加载状态  delay:是否启动延迟显示
+- (void)loadingChangeWithStatus:(BOOL)loading delay:(BOOL)delay;
 
 //加载失败状态
 - (void)failureWithError:(nullable IVError*)error;

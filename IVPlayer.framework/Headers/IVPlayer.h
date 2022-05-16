@@ -44,8 +44,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,assign,readonly) BOOL isPlaying;
 
 
-/// 构建自定义播控层 ( 自定义继承重写播控 , 如果完全自定义请忽略此接口使用playerControlDelegate的方式 )
-/// @param controlView  自定义的播控
+/// 构建自定义播控层 ( 自定义继承重写播控层 , 如果完全自定义请忽略此接口采用继承playerControlDelegate自定义的方式 )
+/// @param controlView  自定义继承的播控
 - (instancetype)initWithControlView:(__kindof IVPlayerControlView*)controlView;
 
 
@@ -59,14 +59,14 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setStartLoadWithConfig_url:(NSString*)config_url;
 
 
-/// 设置协议资源ZIP开始加载
-/// @param resourcePath 智令协议资源zip本地路径，必须是ZIP后缀的完整路径
-/// @param fileName  文件名称
+/// 设置ZIP协议资源开始加载
+/// @param resourcePath 本地zip协议资源文件路径，注意路径格式必须是 file://开头且.zip后缀结尾
+/// @param fileName  文件名称不带.zip后缀
 - (void)setStartLoadWithResourcePath:(NSString*)resourcePath fileName:(NSString*)fileName;
 
 
 /// 设置访问用户ID
-/// @param userId 数据上报统计的用户ID
+/// @param userId 数据上报统计的用户ID，使用此接口需要设置IVPlayerManager的dataStatistics为YES
 - (void)setCommitUserId:(NSString*)userId;
 
 
@@ -79,12 +79,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (IVPlayerNodeModel*)getProgressNodeFromIndex:(int)index;
 
 
-/// 播放器跳转到某个时间
-/// @param time  时间
+/// 播放器跳转到指定的时间
+/// @param time  要跳转的时间
 - (void)seekToTime:(CGFloat)time;
 
 
-/// 设置播放速率 （原生播放器设置rate会自动执行播放状态，通过此接口尽量避免这种行为）
+/// 设置播放速率 （主要是防止原生播放器设置速率会触发播放操作）
 /// @param rate 速率
 - (void)setRate:(CGFloat)rate;
 
