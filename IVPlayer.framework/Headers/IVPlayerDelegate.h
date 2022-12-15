@@ -71,7 +71,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)player:(IVPlayer*)player onEventEndWithNodeModel:(IVPlayerNodeModel*)nodeModel;
 
 
-/// 互动加载失败
+/// 发生错误时通知
 /// @param player 当前player
 /// @param error   IVError 类型
 - (void)player:(IVPlayer*)player failureWithError:(IVError*)error;
@@ -112,12 +112,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)videoDidPauseInPlayer:(IVPlayer*)player;
 
 
-/// 设置视频速率（通过播控层操作或调用IVPlayer的setRate接口触发）
-/// @param player 当前player
-/// @param rate  视频速率
-- (void)player:(IVPlayer*)player setVideoRate:(CGFloat)rate;
-
-
 @optional
 
 
@@ -132,7 +126,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)player:(IVPlayer*)player didFinishBeReadyPlayWithInfoModel:(IVReleaseInfoModel*)infoModel;
 
 
-/// 互动加载错误，互动视频加载错误时回调
+/// 发生错误时通知
 /// @param player  当前player
 /// @param error   对应IVError枚举类型
 - (void)player:(IVPlayer*)player requestLoadFailWithError:(IVError*)error;
@@ -142,6 +136,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param player 当前player
 /// @param loading  YES:加载中  NO:加载结束
 - (void)player:(IVPlayer*)player didChangeLoading:(BOOL)loading;
+
+
+/// 设置视频速率（通过播控层操作或调用IVPlayer的setRate接口触发）
+/// @param player 当前player
+/// @param rate  视频速率
+- (void)player:(IVPlayer*)player setVideoRate:(CGFloat)rate;
 
 
 /// 互动播放状态改变
@@ -206,6 +206,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param miniprogramId 小程序ID
 /// @param path 小程序路径
 - (void)player:(IVPlayer*)player openMiniprogramId:(NSString*)miniprogramId path:(NSString*)path;
+
+
+/// 手势识别事件状态改变通知
+/// @param player 当前player
+/// @param status 事件状态
+- (void)player:(IVPlayer*)player handTrackingDidChangeStatus:(IVEventStatus)status;
 
 
 @end

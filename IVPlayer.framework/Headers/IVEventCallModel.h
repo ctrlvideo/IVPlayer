@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  信息内容说明：根据callType对本类做实例类型转换
  callType == 0 实例类型:IVEventCallSpotModel 且只在项目初始化完成时通知一次
- callType == 1 实例类型:IVEventCallExposureModel 进入事件互动开始时间点时通知
+ callType == 1 实例类型:IVEventCallExposureModel 进入、退出事件互动开始时间点时通知
  callType == 2 实例类型:IVEventCallOperateModel  用户操作互动事件按钮或被动事件触发时通知
  */
 @property(nonatomic,assign) NSInteger callType;
@@ -82,6 +82,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong) NSString *name;
 //事件类型
 @property(nonatomic,strong) NSString *type;
+//是否正在事件
+@property(nonatomic,assign) bool onEvent;
 
 @end
 

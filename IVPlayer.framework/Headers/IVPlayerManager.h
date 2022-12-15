@@ -62,11 +62,11 @@ typedef NS_OPTIONS(NSUInteger, IVPlayerLogTypes){
 
 
 /// SDK版本号（主流版本一般有重大更新才会变跟）
-+ (NSString*)version;
++ (int)version;
 
 
 /// build版本号 （bug修复或功能迭代版本号，值对应每个version版本从低到高依次递增）
-+ (NSString*)build;
++ (int)build;
 
 
 /// 获取缓存资源数据大小:单位/B（ 1G == 1000Mb == 1000 * 1000kb == 1000 * 1000 * 1000b）

@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 //计时更新通知
 - (void)timeDidUpdateWithTime:(float)time;
 //计时完成通知
-- (void)timeDidFinishWithSkipTime:(float)skipTime object:(NSObject*)object;
+- (void)timeDidFinishWithSkipTime:(float)skipTime object:(NSObject *)object type:(int)type;
 @end
 
 @interface IVTimer : NSObject
@@ -48,6 +48,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 //记录对象信息
 @property(nonatomic,strong) NSObject *object;
+
+//当前计时的类型 0:seek，1:显示
+@property(nonatomic,assign) int type;
 
 //计时通知代理
 @property(nonatomic,weak) id <IVTimerDelegate> delegate;

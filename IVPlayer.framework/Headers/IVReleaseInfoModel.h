@@ -6,6 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#include <CoreGraphics/CGGeometry.h>
+
 @class IVReleaseParamsModel;
 @class IVReleaseControllerModel;
 @class IVReleaseControllerCustomModel;
@@ -16,8 +18,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 //项目ID
 @property(nonatomic,strong) NSString *project_id;
-//功能版本号，向下兼容
-@property(nonatomic,strong) NSString *sdk_version;
 //视频播放器url
 @property(nonatomic,strong) NSString *url;
 //项目是否已下架 NO已下架  YES正常
@@ -58,6 +58,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,assign) int fps;
 //视频的码率
 @property(nonatomic,assign) int v_bitRate;
+//当前视频在view上显示的frame
+@property(nonatomic,assign) CGRect videoFrame;
 
 @end
 

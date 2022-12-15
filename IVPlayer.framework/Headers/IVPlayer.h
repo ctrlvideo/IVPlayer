@@ -43,6 +43,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// IVPlayer是否运行中
 @property(nonatomic,assign,readonly) BOOL isPlaying;
 
+/// 是否绘制手势识别的相机画面
+@property(nonatomic,assign) BOOL drawCamera;
+
+/// 手势识别相机画面视图 （需要设置属性showCamera:YES，否则默认nil不绘制）
+@property(nonatomic,strong,readonly) CAEAGLLayer *cameraLayer;
+
 
 /// 构建自定义播控层 ( 自定义继承重写播控层 , 如果完全自定义请忽略此接口采用继承playerControlDelegate自定义的方式 )
 /// @param controlView  自定义继承的播控

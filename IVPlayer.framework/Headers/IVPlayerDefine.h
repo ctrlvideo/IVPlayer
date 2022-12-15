@@ -21,6 +21,14 @@ typedef enum : NSUInteger {
 } IVPlayerStatus;
 
 
+//事件状态
+typedef enum : NSUInteger {
+    IVEventStatusStart = 0,//事件开始
+    IVEventStatusEnd = 1,//事件结束
+    IVEventStatusSucceed = 2,//触发成功
+} IVEventStatus;
+
+
 //服务器主机地址
 #define KServer @"https://apiive-v3.ctrlvideo.com"
 //视频协议URL
